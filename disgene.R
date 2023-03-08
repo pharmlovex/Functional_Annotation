@@ -16,7 +16,10 @@ install_bitbucket("ibi_group/disgenet2r")
 #To load the package:
 library(disgenet2r)
 
-api<-get_disgenet_api_key("ifedayoo.ojo@gmail.com", "Makinde@20")
+
+password =.rs.askForPassword("Password:")
+
+api<-get_disgenet_api_key("ifedayoo.ojo@gmail.com", password = password)
 
 # Retrieving disease association  -----------------------------------------
 
